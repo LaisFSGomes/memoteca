@@ -14,4 +14,10 @@ export class CreateThoughtComponent {
   }
   constructor() {}
   ngOnInit(): void {}
+  createThought() {
+    alert("Thought created!");
+  }
+  cancelThought() {
+    alert("Thought cancelled!");
+  }
 }
