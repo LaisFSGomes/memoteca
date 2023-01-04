@@ -10,7 +10,7 @@ export class CreateThoughtComponent {
     id: "1",
     content: "On my machine, it works!",
     author: "Developer",
-    model: "",
+    model: "modelo3",
   }
   constructor() {}
   ngOnInit(): void {}
