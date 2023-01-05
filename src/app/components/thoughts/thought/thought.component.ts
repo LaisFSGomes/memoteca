@@ -1,3 +1,4 @@
+import { ThoughtType } from './../thought';
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -6,7 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./thought.component.css'],
 })
 export class ThoughtComponent {
-  @Input() thought = {
+  @Input() thought: ThoughtType = {
+    id: 0,
     content: 'it worked yesterday',
     author: 'Developer',
     model: 'modelo3',

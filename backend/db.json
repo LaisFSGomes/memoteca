@@ -8,27 +8,15 @@
     },
     {
       "id": 2,
-      "content": "This is a very large thought because I really need that it be larger and had more than 256 characters. So let's go, very large thought and I have no idea about what I will write, but I'll just continue to write la la la is a bit boring staying making this infinityng when actuary I would wanted is take a very large and delicious coffee.",
-      "author": "Lais",
-      "model": "modelo2"
-    },
-    {
-      "id": 3,
-      "content": "They judge me like a picture book by the colors like they forgot to read",
-      "author": "Lana del Rey",
+      "content": "And in the end, the love you take is equal to the love you make",
+      "author": "The Beatles",
       "model": "modelo3"
     },
     {
-      "id": 4,
-      "content": "Don't let me down",
-      "author": "The Beatles",
+      "id": 3,
+      "content": "The Beatles were an English rock band, formed in Liverpool in 1960, that comprised John Lennon, Paul McCartney, George Harrison and Ringo Starr. They are regarded as the most influential band of all time[1] and were integral to the development of 1960s counterculture and popular music's recognition as an art form. Rooted in skiffle, beat and 1950s rock 'n' roll, their sound incorporated elements of classical music and traditional pop in innovative ways; the band also explored music styles ranging from folk and Indian music to psychedelia and hard rock. As pioneers in recording, songwriting and artistic presentation, the Beatles revolutionised many aspects of the music industry and were often publicised as leaders of the era's youth and sociocultural movements",
+      "author": "Wikipedia",
       "model": "modelo2"
-    },
-    {
-      "id": 5,
-      "content": "When I find myself in times of trouble, Mother Mary comes to me, speaking words of wisdom, let it be",
-      "author": "The Beatles",
-      "model": "modelo1"
     }
   ]
 }

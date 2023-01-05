@@ -1,4 +1,7 @@
+import { ThoughtService } from './../thought.service';
+import { ThoughtType } from './../thought';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-thought',
@@ -6,18 +9,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-thought.component.css'],
 })
 export class CreateThoughtComponent {
-  thought = {
-    id: "1",
-    content: "On my machine, it works!",
-    author: "Developer",
-    model: "modelo3",
+  thought: ThoughtType = {
+    content: "",
+    author: "",
+    model: "",
   }
-  constructor() {}
+  constructor(
+    private service: ThoughtService,
+    private router: Router
+    ) {}
+
   ngOnInit(): void {}
+
   createThought() {
-    alert("Thought created!");
+    this.service.create(this.thought).subscribe(() => {
+      this.router.navigate(["/listarPensamentos"]);
+    });
   }
   cancelThought() {
-    alert("Thought cancelled!");
+    this.router.navigate(["/listarPensamentos"]);
   }
 }
