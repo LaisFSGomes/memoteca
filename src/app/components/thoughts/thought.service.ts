@@ -15,13 +15,21 @@ export class ThoughtService {
   listar(): Observable<ThoughtType[]>{
     return this.http.get<ThoughtType[]>(this.API);
   }
+
   create(thought: ThoughtType): Observable<ThoughtType>{
     return this.http.post<ThoughtType>(this.API, thought);
   }
+
+  edit(thought: ThoughtType): Observable<ThoughtType>{
+    const url = `${this.API}/${thought.id}`;
+    return this.http.put<ThoughtType>(url, thought);
+  }
+
   delete(id: number): Observable<ThoughtType>{
     const url = `${this.API}/${id}`;
     return this.http.delete<ThoughtType>(url);
   }
+
   searchById(id: number): Observable<ThoughtType>{
     const url = `${this.API}/${id}`;
     return this.http.get<ThoughtType>(url);
